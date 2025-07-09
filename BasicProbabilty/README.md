@@ -1,149 +1,199 @@
-# **Probability and Statistics: Basic Definitions**
+# 📘 **Probability and Statistics: Complete Reference Guide**
 
-This document provides fundamental definitions and concepts commonly used in Probability and Statistics. It serves as a quick reference for beginners and enthusiasts.
-
-## **Table of Contents**
-
-* **Introduction**
-    * [Probability and Statistics Overview](#introduction-probability-and-statistics-overview)
-* **Probability Basics**
-    * [Experiment](#experiment)
-    * [Sample Space (S)](#sample-space-s)
-    * [Event](#event)
-    * [Probability (P)](#probability-p)
-* **Types of Events**
-    * [Independent Events](#independent-events)
-    * [Dependent Events](#dependent-events)
-    * [Mutually Exclusive Events](#mutually-exclusive-events)
-    * [Complementary Events](#complementary-events)
-* **Random Variables**
-    * [Definition of Random Variable](#definition-of-random-variable)
-* **Distributions**
-    * [Definition of Distribution](#definition-of-distribution)
-* **Descriptive Statistics**
-    * [Definition of Descriptive Statistics](#definition-of-descriptive-statistics)
-* **Inferential Statistics**
-    * [Definition of Inferential Statistics](#definition-of-inferential-statistics)
-* **Common Statistical Measures**
-    * [Definition of Common Statistical Measures](#definition-of-common-statistical-measures)
-* **Glossary**
-    * [Definition of Glossary](#definition-of-glossary)
+This document is a comprehensive guide to essential concepts in **Probability and Statistics**, designed for beginners, students, and enthusiasts. It includes clear definitions, categorized sections, mathematical notations, and formulas where applicable.
 
 ---
 
-## **Introduction**
+## 📑 **Table of Contents**
 
-Probability and Statistics are branches of mathematics concerned with data analysis, interpretation, and prediction. Probability measures the likelihood of an event, while statistics involves collecting, analyzing, interpreting, and presenting data.
+1. [Introduction](#introduction)
+2. [Probability Basics](#probability-basics)
 
-<a id="introduction-probability-and-statistics-overview"></a>
-### Probability and Statistics Overview
+   * Experiment
+   * Sample Space $S$
+   * Event
+   * Probability $P$
+3. [Types of Events](#types-of-events)
 
-* **Probability:** The branch of mathematics concerning numerical descriptions of how likely an event is to occur, or how likely it is that a proposition is true.
-* **Statistics:** The discipline that concerns the collection, organization, analysis, interpretation, and presentation of data.
+   * Independent Events
+   * Dependent Events
+   * Mutually Exclusive Events
+   * Complementary Events
+4. [Random Variables](#random-variables)
+5. [Probability Distributions](#probability-distributions)
 
----
+   * Discrete vs Continuous
+   * Common Distributions
+6. [Descriptive Statistics](#descriptive-statistics)
 
-## **Probability Basics**
+   * Central Tendency
+   * Dispersion
+7. [Inferential Statistics](#inferential-statistics)
 
-<a id="experiment"></a>
-### Experiment
-
-* **Definition:** A process or action that results in one or several outcomes.
-
-<a id="sample-space-s"></a>
-### Sample Space (S)
-
-* **Definition:** The set of all possible outcomes of an experiment.
-
-<a id="event"></a>
-### Event
-
-* **Definition:** A subset of the sample space, one or more outcomes of interest.
-
-<a id="probability-p"></a>
-### Probability (P)
-
-* **Definition:** A measure of how likely an event is to occur, ranging from 0 (impossible) to 1 (certain).
+   * Estimation
+   * Hypothesis Testing
+   * Confidence Intervals
+8. [Formulas Reference](#formulas-reference)
+9. [Glossary](#glossary)
 
 ---
 
-## **Types of Events**
+## 🧠 **Introduction**
 
-<a id="independent-events"></a>
-### Independent Events
+**Probability** deals with the chance of occurrence of events. **Statistics** involves collecting, organizing, analyzing, and interpreting data to make informed decisions.
 
-* **Definition:** Occurrence of one event does not affect the probability of the other.
+### 🔍 Key Differences:
 
-<a id="dependent-events"></a>
-### Dependent Events
-
-* **Definition:** Occurrence of one event affects the probability of the other.
-
-<a id="mutually-exclusive-events"></a>
-### Mutually Exclusive Events
-
-* **Definition:** Two events that cannot occur at the same time. Also known as disjoint events.
-
-<a id="complementary-events"></a>
-### Complementary Events
-
-* **Definition:** The event that an event does not occur. If A is an event, its complement (A') is the event that A does not happen.
+* **Probability:** Starts with known data to predict outcomes.
+* **Statistics:** Starts with data and infers unknowns.
 
 ---
 
-## **Random Variables**
+## 🎲 **Probability Basics**
 
-<a id="definition-of-random-variable"></a>
-### Definition of Random Variable
+### 🔬 Experiment
 
-* **Definition:** A variable whose value is a numerical outcome of a random phenomenon. It can be discrete (countable values) or continuous (values within a range).
+A repeatable process with uncertain outcomes.
 
----
+### 📂 Sample Space $S$
 
-## **Distributions**
+The set of all possible outcomes:
+$S = \{s_1, s_2, ..., s_n\}$
 
-<a id="definition-of-distribution"></a>
-### Definition of Distribution
+### 📌 Event
 
-* **Definition:** A function that shows the possible values for a variable and how often they occur. Common types include normal, binomial, and Poisson distributions.
+A subset of the sample space:
+$A \subseteq S$
 
----
+### 🎯 Probability $P$
 
-## **Descriptive Statistics**
+The measure of likelihood of an event:
+$P(A) = \frac{\text{Number of favorable outcomes}}{\text{Total outcomes}}$
 
-<a id="definition-of-descriptive-statistics"></a>
-### Definition of Descriptive Statistics
+Properties:
 
-* **Definition:** Methods used to describe or summarize data in a meaningful way, such as measures of central tendency (mean, median, mode) and dispersion (variance, standard deviation).
-
----
-
-## **Inferential Statistics**
-
-<a id="definition-of-inferential-statistics"></a>
-### Definition of Inferential Statistics
-
-* **Definition:** Methods used to draw conclusions or make predictions about a population based on a sample of data. This involves hypothesis testing, confidence intervals, and regression analysis.
+* $0 \leq P(A) \leq 1$
+* $P(S) = 1$
+* $P(A') = 1 - P(A)$
 
 ---
 
-## **Common Statistical Measures**
+## 🔗 **Types of Events**
 
-<a id="definition-of-common-statistical-measures"></a>
-### Definition of Common Statistical Measures
+### ✅ Independent Events
 
-* **Mean:** The average of a set of numbers.
-* **Median:** The middle value in a sorted list of numbers.
-* **Mode:** The most frequently occurring value in a dataset.
-* **Variance:** A measure of how far a set of numbers is spread out from their average value.
-* **Standard Deviation:** The square root of the variance, providing a measure of dispersion in the same units as the data.
-* **Range:** The difference between the highest and lowest values in a dataset.
+Events that do not affect each other:
+$P(A \cap B) = P(A) \cdot P(B)$
+
+### 🔄 Dependent Events
+
+One event affects the other:
+$P(A \cap B) = P(A) \cdot P(B|A)$
+
+### 🚫 Mutually Exclusive Events
+
+Events that cannot occur together:
+$P(A \cap B) = 0$
+
+### 🔁 Complementary Events
+
+Events that cover all possibilities:
+$P(A') = 1 - P(A)$
 
 ---
 
-## **Glossary**
+## 🎲 **Random Variables**
 
-<a id="definition-of-glossary"></a>
-### Definition of Glossary
+A **random variable** assigns numerical values to outcomes:
 
-* **Definition:** An alphabetical list of terms in a particular domain of knowledge with the definitions for those terms. This section would typically contain all key terms defined throughout the document.
+* **Discrete:** Countable outcomes (e.g., dice rolls)
+* **Continuous:** Uncountably infinite outcomes (e.g., weight, height)
+
+Notation:
+
+* $X \sim \text{Binomial}(n, p)$
+* $X \sim \mathcal{N}(\mu, \sigma^2)$
+
+---
+
+## 📈 **Probability Distributions**
+
+### Discrete Distributions:
+
+* **Bernoulli**: $P(X=1)=p, P(X=0)=1-p$
+* **Binomial**: $P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}$
+* **Poisson**: $P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}$
+
+### Continuous Distributions:
+
+* **Uniform**: $f(x) = \frac{1}{b-a}$
+* **Normal (Gaussian)**: $f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$
+* **Exponential**: $f(x) = \lambda e^{-\lambda x}$
+
+---
+
+## 📊 **Descriptive Statistics**
+
+### Measures of Central Tendency:
+
+* **Mean** $\mu = \frac{\sum x_i}{n}$
+* **Median**: Middle value
+* **Mode**: Most frequent value
+
+### Measures of Dispersion:
+
+* **Range** = Max - Min
+* **Variance** $\sigma^2 = \frac{\sum (x_i - \mu)^2}{n}$
+* **Standard Deviation** $\sigma = \sqrt{\sigma^2}$
+* **IQR**: Q3 - Q1 (Interquartile Range)
+
+---
+
+## 📉 **Inferential Statistics**
+
+### Estimation:
+
+* **Point Estimation**: Single value as estimate
+* **Interval Estimation**: Range of values using confidence intervals
+
+### Hypothesis Testing:
+
+* **Null Hypothesis (H₀)**: No effect/difference
+* **Alternative Hypothesis (H₁)**: There is an effect/difference
+* Test statistics: z-test, t-test, chi-square, etc.
+
+### Confidence Intervals:
+
+$CI = \bar{x} \pm Z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$
+
+---
+
+## 📐 **Formulas Reference**
+
+| Concept             | Formula                                                                    |
+| ------------------- | -------------------------------------------------------------------------- |
+| Probability         | $P(E) = \frac{f}{N}$                                                       |
+| Mean                | $\mu = \frac{\sum x_i}{n}$                                                 |
+| Variance            | $\sigma^2 = \frac{\sum (x_i - \mu)^2}{n}$                                  |
+| Standard Deviation  | $\sigma = \sqrt{\sigma^2}$                                                 |
+| Binomial            | $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$                                  |
+| Normal PDF          | $f(x) = \frac{1}{\sqrt{2\pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$ |
+| Confidence Interval | $CI = \bar{x} \pm Z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$              |
+
+---
+
+## 📚 **Glossary**
+
+| Term                    | Definition                                   |
+| ----------------------- | -------------------------------------------- |
+| **Experiment**          | A procedure to obtain outcomes               |
+| **Event**               | One or more outcomes of interest             |
+| **Sample Space**        | All possible outcomes                        |
+| **Random Variable**     | Numeric outcome of a random event            |
+| **Mean**                | Average of values                            |
+| **Variance**            | Spread of values around the mean             |
+| **Hypothesis**          | Assumption about a population                |
+| **Confidence Interval** | Range likely to contain population parameter |
+
+---
+
