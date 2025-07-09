@@ -146,4 +146,4 @@ Probability and Statistics are branches of mathematics concerned with data analy
 <a id="definition-of-glossary"></a>
 ### Definition of Glossary
 
-* **Definition:** An alphabetical list of terms in a particular domain of knowledge with the definitions for those terms. This section would typically contain all key terms defined throughout the document for quick lookup.
+* **Definition:** An alphabetical list of terms in a particular domain of knowledge with the definitions for those terms. This section would typically contain all key terms defined throughout the document.
