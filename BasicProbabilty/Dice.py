@@ -11,11 +11,14 @@ no_of_fours = 0
 no_of_fives = 0
 no_of_sixes = 0
 
+game_fee = 0
 
-for i in range(10):
+for i in range(100000):
+    game_fee += 4
     result = roll_dice()
     if result == 1:
         no_of_ones += 1
+        
     elif result == 2:  
         no_of_twos += 1
     elif result == 3:
@@ -33,3 +36,9 @@ print(f'Number of threes: {no_of_threes}')
 print(f'Number of fours: {no_of_fours}')
 print(f'Number of fives: {no_of_fives}')
 print(f'Number of sixes: {no_of_sixes}')
+
+profit =  game_fee - (no_of_ones*1 + no_of_twos*2 + no_of_threes*3 + no_of_fours*4 + no_of_fives*5 + no_of_sixes*6)
+
+print(f'Total game fee: {game_fee}')
+
+print(f'Total profit: {profit}')
