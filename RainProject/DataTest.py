@@ -26,3 +26,4 @@ monthly_prob = df.groupby('month')['rain_day'].mean()
 monthly_prob.plot(kind='bar', ylabel='Rain Probability', xlabel='Month', title='Monthly Rainfall Probability')
 plt.tight_layout()
 plt.show()
+
